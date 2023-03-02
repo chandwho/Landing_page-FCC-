@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+
+}
+
+#header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(242, 242, 242);;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img{
+    height: 40px;
+    width: 300px;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 50px;
+    color:#000
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin: 120px auto 0 auto;
+}
+
+#form >h2{
+    margin-bottom: 30px;
+}
+
+input[type="email"]{
+    width: 60%;
+    height: 35px;
+    text-indent: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 140px;
+    height: 30px;
+    background-color: rgb(255, 191, 0);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#main-content{
+    padding: 40px;
+}
+
+#feature-section{
+    padding: 40px 100px;
+    margin: auto;
+}
+
+.feature{
+    width: 80%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 30px;
+    margin: auto;
+    text-align: left;
+}
+
+.icon{
+    font-size: 50px;
+    color: orange;
+    min-width: 80px;
+}
+
+.feature-text >p{
+    font-size: 0.9rem;
+}
+
+#video-section{
+    padding: 40px;
+}
+
+#price-section{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+}
+
+.price{
+    width: 320px;
+    border: 1px solid black;
+}
+
+.price >h3{
+    background-color: rgb(219, 219, 219);
+    padding: 15px;
+}
+
+.price >h2{
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.price >p{
+    margin-bottom: 5px;
+}
+
+.price-button{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(255, 191, 0);
+    font-size: 1rem;
+    margin: 20px 0px 15px 0px;
+}
+
+#footer{
+    background-color: rgb(219, 219, 219);
+    padding: 15px;
+}
+
+@media (max-width:750px){
+    #container{
+        display:flex;
+        flex-direction: column;
+    }
+    #nav-bar{
+        flex-direction: column;
+    }
+    .link-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
